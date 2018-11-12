@@ -1,1 +1,1 @@
-mazuxe_book
+Book theme made from bootstrap
