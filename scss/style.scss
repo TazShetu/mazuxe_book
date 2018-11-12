@@ -1,0 +1,65 @@
+$primary-color: #3292a6;
+$primary-overlay: rgba(10,60,34,0.8);
+
+body{
+  margin-top: 105px;
+}
+.navbar{
+  box-shadow: 2px 2px 5px $primary-color;
+  opacity: 0.95;
+  background: #fff;
+
+  .nav-item{
+    font-size: 1.4rem;
+    padding-right: 20px;
+  }
+}
+
+#showcase{
+  position: relative;  //cz child will be absolute
+  background: url('../img/showcase2.jpg');
+  background-size: cover;  // i added like project 1
+  background-attachment: fixed;  // i added like project 1
+  min-height: 600px;
+
+  .primary-overlay{
+    background: $primary-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.infoHeader{
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid;
+}
+
+#authors{
+  img{
+    margin-top: -50px;
+  }
+  .fa{
+    font-size: 25px;
+  }
+  .fa-facebook{
+    color: #3b5998;
+  }
+  .fa-twitter{
+    color: #1da1f2;
+  }
+  .fa-instagram{
+  color: #cd486b;
+}
+  .card:hover{
+    background: $primary-color;
+    color: #fff;
+
+    .fa{
+      color: #fff;
+    }
+  }
+}
